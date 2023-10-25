@@ -1,0 +1,381 @@
+@font-face {
+    font-family: nunito;
+    src: url("./fonts/static/Nunito-Light.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* background-image: url(img/fondo-presentacion-abstracto-blanco-negro-rojo-azul-moderno-concepto-corporativo_181182-17144.webp); */
+    background: linear-gradient(to right, #FFFEAD 0%, #F6FF00 50%, #9CED38 100%);
+}
+    /* background: linear-gradient(to right, #CE8CCB 0%, #7FC7F5 100%, #C59237 100%);
+}; ?******estilo de background alternativo rosa y azul*/
+
+p {
+    font-size: 1.5rem;
+}
+
+
+/************************************************/
+/*******************HEADER***********************/
+/************************************************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: rgb(110, 110, 110);
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para pantallas pequeñas móviles y tablets*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu ul li {
+        margin: 10px 0;
+    }
+}
+
+/* header {
+    background-color: rgb(110, 110, 110);
+    color: #fff;
+    padding: 10px 0;
+    text-align: end;
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+} */
+
+
+/**********************************************************/
+/*********************** FOOTER ***************************/
+/**********************************************************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 30px;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .social-icons img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+
+/************************************/
+/* estilo de formulario de contacto */
+/************************************/
+
+.container-form {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.container-form h2 {
+    margin-bottom: 15px;
+    font-size: 35px
+}
+
+.container-form p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+
+.container-form a i {
+    color: orange;
+    margin-right: 10px;
+}
+
+.container-form form .campo,
+textarea {
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea {
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form .btn-enviar {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(110, 110, 110);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form .btn-enviar:hover {
+    background:rgb(36, 232, 50);
+}
+
+
+
+/***********************************/
+/* estilo de galeria de imagenes */
+/**********************************/
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 10vh;
+    margin-bottom: 10vh;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 7vh;
+    margin-bottom: 10vh;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.agregar-carrito {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.price {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.agregar-carrito:hover {
+    background-color: rgb(36, 232, 50);
+}
+
+/***************************************************************/
+/***************** estilo para el carrousel*********************/
+/***************************************************************/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header {
+    text-align: center;
+    margin-bottom: 20px;
+} */
+
+main {
+    text-align: justify;
+}
+
+main p {
+    margin-bottom: 20px;
+}
+
+/* Estilos para pantallas pequeñas (móviles y tablets) */
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+}
+
+/******************************************/
+/* video */
+/******************************************/
+.nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #f5f5f5;
+
+}
+.contenedor-video {
+    height: 50vh;
+    margin: 10%;
+    margin-bottom: 15rem;
+
+    
+}
+
+.video {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+
+/***************************************/
+/*          tabla de talles            */
+/***************************************/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-container {
+    width: 30%;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
